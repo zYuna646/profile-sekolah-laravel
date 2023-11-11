@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid" style="padding-left: 80px; padding-right: 80px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,9 +66,9 @@
         </div>
     </nav>
 
-    <header>
-        <div class="container" style="height:100vh;">
-            <div class="d-flex flex-row" style="height: 100%">
+    <section class="hero bg-light">
+        {{-- <div class="container" style="height:100vh;">
+            <div class="d-flex flex-row" style="height: 100%; width:100%">
                 <div class="d-flex align-items-center gap-4">
                     <img src="assets/img/SMAN MODEL LOGO.png" alt="" style="width: 150px">
                     <div class="d-flex flex-column">
@@ -76,10 +76,27 @@
                         <h1>SMK NEGERI <span style="color: #D37E00">MODEL GORONTALO</span></h1>
                     </div>
                 </div>
+                <div class="d-flex" style="width: 45%; ">
+                    <img src="assets/img/smkmodel.jpeg" alt="">
+                </div>
             </div>
-        </div>
+        </div> --}}
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center justify-content-evenly g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/img/hero-full-cut.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1000" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h3 class="fw-bold">Sistem Informasi</h3>
+                <h1 class="display-5 fw-bold lh-1 mb-3">SMK NEGERI <br> <span style="color: #D37E00">MODEL GORONTALO</span></h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                </div>
+              </div>
+            </div>
+          </div>
         <!--countener punya-->
-    </header>
+    </section>
 
 
     <!--- bagian banner -->
@@ -92,13 +109,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 700px">
+                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 500px; object-fit:cover">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 700px">
+                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 500px; object-fit:cover">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 700px">
+                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 500px; object-fit:cover">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

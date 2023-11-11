@@ -4,3 +4,13 @@
     border-radius: 50px;
     color: white;
 }
+.hero-landing{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+}
+.hero-landing .hero-title{
+    opacity: 100%;
+}
