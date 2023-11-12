@@ -9,4 +9,8 @@ class HomeController extends Controller
     public function index() {
         return view('landing.index');
     }
+
+    public function galeri(){
+        return view('landing.galeri');
+    }
 }
