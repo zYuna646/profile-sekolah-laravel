@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid" style="padding-left: 80px; padding-right: 80px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,18 +83,22 @@
         </div> --}}
         <div class="container col-xxl-8 px-4 py-5" style="height: 100vh;">
             <div class="row flex-lg-row-reverse align-items-center justify-content-evenly g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="assets/img/hero-full-cut.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1000" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="fw-bold">Sistem Informasi</h3>
-                <h1 class="display-5 fw-bold lh-1 mb-3">SMK NEGERI <br> <span style="color: #D37E00">MODEL GORONTALO</span></h1>
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <div class="col-10 col-sm-12 col-lg-6">
+                    <img src="assets/img/hero-full-cut.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="1000" loading="lazy">
                 </div>
-              </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Sistem Informasi</h3>
+                    <h1 class="display-5 fw-bold lh-1 mb-3">SMK NEGERI <br> <span style="color: #D37E00">MODEL
+                            GORONTALO</span></h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
         <!--countener punya-->
     </section>
 
@@ -103,113 +107,99 @@
     <section>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 500px; object-fit:cover">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 500px; object-fit:cover">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..." style="height: 500px; object-fit:cover">
-              </div>
+                <div class="carousel-item active">
+                    <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                        style="height: 500px; object-fit:cover">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                        style="height: 500px; object-fit:cover">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                        style="height: 500px; object-fit:cover">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </section>
 
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
 
-    <!---kenapa harus sekolah-->
 
-    <div class="container-fluid" style="background-color: #007C23;">
+    <div class="container-fluid py-5" style="background-color: #007C23;">
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-1">
-
-                </div>
+            <div class="row justify-content-center mb-3">
                 <div class="col-lg-10 text-center mt-4 text-light">
                     <h3>Kenapa Harus Sekolah di <span class="text-warning"> SMKN Model Gorontalo </span> ?</h4>
                         <p>Alasan kenapa kalian harus bergabung di SMKN Model Gorontalo</p>
 
                 </div>
-                <div class="col-lg-1">
-
-                </div>
             </div>
-            <!-- panggil class row untuk membuat ruang 12 kolom -->
-            <div class="row">
-                <!-- ini menggunakan 3 kolom yang tersedia -->
-                <div class="col-lg-3 ">
-                    <div class="rounded p-4 shadow">
-                        <div>
-                            <div class="d-flex justify-content-center ">
-                                <div class="circle-icon">
-                                    
-                                </div>
-                            </div>
-                            <div class="text-light">
-                                <h4 class="mt-4">Akreditas</h4>
-                                <p class="mt-3">Sekolah Kami saat ini sudah terverifikasi dan terakreditasi A.</p>
-                            </div>
+            <div class="row row-gap-2">
+                <div class="col-lg-3">
+                    <div class="rounded p-4 shadow" style="height:275px">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/Ellipse 208.png" alt=""
+                                class="bg-light p-2 rounded-circle shadow-1" style="widht:50px">
+                        </div>
+                        <div class="text-light text-center">
+                            <h4 class="mt-4">Akreditas</h4>
+                            <p class="mt-3">Sekolah Kami saat ini sudah terverifikasi dan terakreditasi A.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 ">
-                    <div class="rounded p-4 shadow">
-                        <div>
-                            <div class="logo d-flex justify-content-center ">
-                                <div class="circle-icon">
-                                    
-                                </div>
-                            </div>
-                            <div class="text-light">
-                                <h4 class="mt-4">Pengajar Kompeten</h4>
-                                <p class="mt-3">Guru yang Update dengan perkembangan industri.</p>
-                            </div>
+                <div class="col-lg-3">
+                    <div class="rounded p-4 shadow" style="height:275px">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/R 1.png" alt=""
+                                class="bg-light p-2 rounded-circle shadow-1" style="widht:50px">
+                        </div>
+                        <div class="text-light text-center">
+                            <h4 class="mt-4">Pengajar Kompeten</h4>
+                            <p class="mt-3">Guru yang Update dengan perkembangan industri.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 ">
-                    <div class="rounded p-4 shadow">
-                        <div>
-                            <div class="logo d-flex justify-content-center ">
-                                <div class="circle-icon">
-                                    
-                                </div>
-                            </div>
-                            <div class="text-light">
-                                <h4 class="mt-4">Kerjasama Luas</h4>
-                                <p class="mt-3">Memperbesar kesempatan para peserta didik untuk bisa bekerja sebelum
-                                    lulus.</p>
-                            </div>
+                <div class="col-lg-3">
+                    <div class="rounded p-4 shadow" style="height:275px">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/employer-png-11 1.png" alt=""
+                                class="bg-light p-2 rounded-circle shadow-1" style="widht:50px">
+                        </div>
+                        <div class="text-light text-center">
+                            <h4 class="mt-4">Kerjasama Luas</h4>
+                            <p class="mt-3">Memperbesar kesempatan para peserta didik untuk bisa bekerja sebelum
+                                lulus.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 ">
-                    <div class="rounded p-4 shadow">
-                        <div>
-                            <div class="logo d-flex justify-content-center ">
-                                <div class="circle-icon">
-                                    
-                                </div>
-                            </div>
-                            <div class="text-light">
-                                <h4 class="mt-4">Fasilitas Lengkap</h4>
-                                <p class="mt-3">Fasilitas pembelajaran yang lengkap dan terjamin.</p>
-                            </div>
+                <div class="col-lg-3">
+                    <div class="rounded p-4 shadow" style="height:275px">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/img/864423 1.png" alt=""
+                                class="bg-light p-2 rounded-circle shadow-1" style="widht:50px">
+                        </div>
+                        <div class="text-light text-center">
+                            <h4 class="mt-4">Fasilitas Lengkap</h4>
+                            <p class="mt-3">Fasilitas pembelajaran yang lengkap dan terjamin.</p>
                         </div>
                     </div>
                 </div>
@@ -236,23 +226,29 @@
             <!--row punya isi visi misi-->
             <div class="row">
                 <!-- ini menggunakan 3 kolom yang tersedia -->
-                <div class="col-lg-6 ">
+                <div class="col">
                     <div>
                         <div class=" justify-content-center ">
-                            <h3 class="bg-secondary w-25">VISI</h2>
+                            <h3 class="bg-secondary w-25 ps-3 rounded">VISI</h2>
                                 <P>Terwujudnya SMK Negeri Model Gorontalo yang inovatif, unggul dan berbudaya</P>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-auto">
                     <div>
                         <div class=" justify-content-center ">
-                            <h3 class="bg-secondary w-50">MISI</h2>
-                                <P>Membangun sistem manejemen pengelolaan SMK yang handal
+                            <h3 class="bg-secondary w-50 ps-3 rounded">MISI</h2>
+                                {{-- <P>Membangun sistem manejemen pengelolaan SMK yang handal
                                     <br>Menyiapkan guru profesional yang memiliki kompetensi kejuruan <br>
                                     Menyelenggarakan pembelajaran sesuai kompetensi dan tuntutan pasar kerja
                                     <br> Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri </br>
-                                </P>
+                                </P> --}}
+                                <ul>
+                                    <li>Membangun sistem manejemen pengelolaan SMK yang handal</li>
+                                    <li>Menyiapkan guru profesional yang memiliki kompetensi kejuruan</li>
+                                    <li>Menyelenggarakan pembelajaran sesuai kompetensi dan tuntutan pasar kerja</li>
+                                    <li>Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri</li>
+                                </ul>
                         </div>
                     </div>
                 </div>
