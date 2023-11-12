@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div> --}}
-        <div class="container col-xxl-8 px-4 py-5">
+        <div class="container col-xxl-8 px-4 py-5" style="height: 100vh;">
             <div class="row flex-lg-row-reverse align-items-center justify-content-evenly g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
                 <img src="assets/img/hero-full-cut.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1000" loading="lazy">
