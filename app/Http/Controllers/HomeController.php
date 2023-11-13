@@ -13,4 +13,8 @@ class HomeController extends Controller
     public function galeri(){
         return view('landing.galeri');
     }
+
+    public function staff(){
+        return view('landing.staff');
+    }
 }
