@@ -67,7 +67,7 @@
                             <h1>Siswa</h1>
                         </div>
                         <div class="row">
-                            <h2>5</h2>
+                            <h2>254</h2>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                             <h1>Tim Pengajar</h1>
                         </div>
                         <div class="row">
-                            <h2>5</h2>
+                            <h2>34</h2>
                         </div>
                     </div>
                 </div>
@@ -111,11 +111,11 @@
                     style="height: 500px; object-fit:cover">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                <img src="assets/img/kegiatan 2.jpeg" class="d-block w-100" alt="..."
                 style="height: 500px; object-fit:cover">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                <img src="assets/img/kegiatan.jpeg" class="d-block w-100" alt="..."
                     style="height: 500px; object-fit:cover">
             </div>
         </div>
@@ -220,8 +220,8 @@
             <div class="col">
                 <div>
                     <div class=" justify-content-center ">
-                        <h3 class="bg-secondary w-25 ps-3 rounded">VISI</h2>
-                            <P>Terwujudnya SMK Negeri Model Gorontalo yang inovatif, unggul dan berbudaya</P>
+                        <h3 class="bg-secondary w-50 ps-3 rounded">VISI</h2>
+                            <P>Terwujudnya Smk Yang Unggul Berbudi Pekerti Mulia, Menguasai Iptek, Didasari Iman Dan Taqwa, Berbudaya, Kompetitif Secara Global Dan Berawawasan Lingkungan Serta Mampu Menciptkana Lapangan kerja Mandiri</P>
                     </div>
                 </div>
             </div>
@@ -235,10 +235,14 @@
                                     <br> Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri </br>
                                 </P> --}}
                             <ul>
-                                <li>Membangun sistem manejemen pengelolaan SMK yang handal</li>
-                                <li>Menyiapkan guru profesional yang memiliki kompetensi kejuruan</li>
-                                <li>Menyelenggarakan pembelajaran sesuai kompetensi dan tuntutan pasar kerja</li>
-                                <li>Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri</li>
+                                <li>Meningkatkan kualitas pembelajaran SMK yang unggul, <br>merata untuk menghasilkan lulusan yang terampil,<br> berkarakter, berdaya saing dalam bekerja dan mandiri</li>
+                                <li>Meningkatkan kompetensi profesionalisme pendidik <br>dan tenaga kependidikan untuk menyongsong revolusi industri 4.0</li>
+                                <li>Mengupayakan mutu layanan pendidikan kejuruan sesuai dengan tuntutan pasar kerja</li>
+                                <li>Menjalin networking yang baik dengan dunia usaha dan dunia industri</li>
+                                <li>Membangun sistem manajemen pengelolaan yang koprasional</li>
+                                <li>Menyelaraskan sarana dan prasarana pendidikan dalam peningkatan kualitas sekolah</li>
+                                <li>Mensinergikan kegiatan ekstrakurikuler yang berwawasan lingkungan</li>
+                                <li>Mengoptimalkan peran komite sekolah sebagai mitra kerja</li>
                             </ul>
                     </div>
                 </div>
