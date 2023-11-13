@@ -136,7 +136,7 @@
                 </div>
                 <img src="assets/img/Kepala LAB PAI.jpg" alt="" class="mx-auto" style="width: 300px">
                 <div class="card-body text-center">
-                    <h3>tri susanti jasin. S.pD</h3>
+                    <h3>Tri Susanti Jasin. S.pD</h3>
                 </div>
             </div>
         </div>
