@@ -220,8 +220,8 @@
             <div class="col">
                 <div>
                     <div class=" justify-content-center ">
-                        <h3 class="bg-secondary w-25 ps-3 rounded">VISI</h2>
-                            <P>Terwujudnya SMK Negeri Model Gorontalo yang inovatif, unggul dan berbudaya</P>
+                        <h3 class="bg-secondary w-50 ps-3 rounded">VISI</h2>
+                            <P>Terwujudnya Smk Yang Unggul Berbudi Pekerti Mulia, Menguasai Iptek, Didasari Iman Dan Taqwa, Berbudaya, Kompetitif Secara Global Dan Berawawasan Lingkungan Serta Mampu Menciptkana Lapangan kerja Mandiri</P>
                     </div>
                 </div>
             </div>
@@ -235,10 +235,14 @@
                                     <br> Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri </br>
                                 </P> --}}
                             <ul>
-                                <li>Membangun sistem manejemen pengelolaan SMK yang handal</li>
-                                <li>Menyiapkan guru profesional yang memiliki kompetensi kejuruan</li>
-                                <li>Menyelenggarakan pembelajaran sesuai kompetensi dan tuntutan pasar kerja</li>
-                                <li>Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri</li>
+                                <li>Meningkatkan kualitas pembelajaran SMK yang unggul, <br>merata untuk menghasilkan lulusan yang terampil,<br> berkarakter, berdaya saing dalam bekerja dan mandiri</li>
+                                <li>Meningkatkan kompetensi profesionalisme pendidik <br>dan tenaga kependidikan untuk menyongsong revolusi industri 4.0</li>
+                                <li>Mengupayakan mutu layanan pendidikan kejuruan sesuai dengan tuntutan pasar kerja</li>
+                                <li>Menjalin networking yang baik dengan dunia usaha dan dunia industri</li>
+                                <li>Membangun sistem manajemen pengelolaan yang koprasional</li>
+                                <li>Menyelaraskan sarana dan prasarana pendidikan dalam peningkatan kualitas sekolah</li>
+                                <li>Mensinergikan kegiatan ekstrakurikuler yang berwawasan lingkungan</li>
+                                <li>Mengoptimalkan peran komite sekolah sebagai mitra kerja</li>
                             </ul>
                     </div>
                 </div>
