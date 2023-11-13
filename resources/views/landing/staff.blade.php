@@ -35,9 +35,9 @@
                 <div class="card-header text-center">
                     <h2>Wakasek <br> Kurikulum</h2>
                 </div>
-                <img src="assets/img/wakasek humas rill.jpg" alt="" class="mx-auto" style="width: 300px">
+                <img src="assets/img/wakasek kurikulum.jpg" alt="" class="mx-auto" style="width: 300px">
                 <div class="card-body text-center">
-                    <h3>Nurhayati Bau S.Pd</h3>
+                    <h3>NURAIN DJAFAR. M.pd</h3>
                 </div>
             </div>
             <div class="card">
@@ -53,18 +53,90 @@
                 <div class="card-header text-center">
                     <h2>Wakasek <br> Sarana Prasarana</h2>
                 </div>
-                <img src="assets/img/wakasek humas rill.jpg" alt="" class="mx-auto" style="width: 300px">
+                <img src="assets/img/wakasek sarana.jpg" alt="" class="mx-auto" style="width: 300px">
                 <div class="card-body text-center">
-                    <h3>Nurhayati Bau S.Pd</h3>
+                    <h3>Nikswanto Hapulu. S.Pd. M.pd</h3>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header text-center">
                     <h2>Wakasek <br> Kesiswaan</h2>
                 </div>
-                <img src="assets/img/wakasek humas rill.jpg" alt="" class="mx-auto" style="width: 300px">
+                <img src="assets/img/wakasek kesiswaan.jpg" alt="" class="mx-auto" style="width: 300px">
                 <div class="card-body text-center">
-                    <h3>Nurhayati Bau S.Pd</h3>
+                    <h3>zubaeda uno.s.Pd. M.pD</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Kepala <br> Tata Usaha</h2>
+                </div>
+                <img src="assets/img/Kepala TU Ramli Saleh S.pd.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>Ramli Saleh, s.pd</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Ketua program keahlian <br>ATR dan ATU </h2>
+                </div>
+                <img src="assets/img/Ketua Program Keahlian ATU ATR.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>Sumarno, S.PT</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Ketua program keahlian <br> APHP </h2>
+                </div>
+                <img src="assets/img/Kajur APHP.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>Selvianan Idrus, S.Pd</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Ketua program keahlian <br> TKJ </h2>
+                </div>
+                <img src="assets/img/Kajur TKJ.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>Agustiana. S.Kom</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Ketua program keahlian <br> ATPH</h2>
+                </div>
+                <img src="assets/img/Kajur ATPH.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>Kosahih. S.Pd</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Kepala Bengkel TKJ </h2>
+                </div>
+                <img src="assets/img/Kepala Bengkel TKJ.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>UMUSALAM JUMNA R IBRAHIM.S.Pd</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Kepala Lab IPA </h2>
+                </div>
+                <img src="assets/img/Kepala Lab Ipa.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>tri susanti jasin. S.pD</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Kepala Lab Pendidikan Agama Islam</h2>
+                </div>
+                <img src="assets/img/Kepala LAB PAI.jpg" alt="" class="mx-auto" style="width: 300px">
+                <div class="card-body text-center">
+                    <h3>tri susanti jasin. S.pD</h3>
                 </div>
             </div>
         </div>
