@@ -67,7 +67,7 @@
                             <h1>Siswa</h1>
                         </div>
                         <div class="row">
-                            <h2>5</h2>
+                            <h2>254</h2>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                             <h1>Tim Pengajar</h1>
                         </div>
                         <div class="row">
-                            <h2>5</h2>
+                            <h2>34</h2>
                         </div>
                     </div>
                 </div>
@@ -111,11 +111,11 @@
                     style="height: 500px; object-fit:cover">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                <img src="assets/img/kegiatan 2.jpeg" class="d-block w-100" alt="..."
                 style="height: 500px; object-fit:cover">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                <img src="assets/img/kegiatan.jpeg" class="d-block w-100" alt="..."
                     style="height: 500px; object-fit:cover">
             </div>
         </div>
