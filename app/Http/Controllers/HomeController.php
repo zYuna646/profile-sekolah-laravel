@@ -20,6 +20,9 @@ class HomeController extends Controller
     public function struktur(){
         return view('landing.struktur');
     }
+    public function kompetensi(){
+        return view('landing.kompetensi');
+    }
     public function prestasi(){
         return view('landing.prestasi');
     }

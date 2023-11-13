@@ -47,7 +47,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="">Kompetensi Keahlian</a>
+                        <a class="nav-link fw-bold" href="{{route('kompetensi')}}">Kompetensi Keahlian</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink"

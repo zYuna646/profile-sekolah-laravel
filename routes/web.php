@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route Landing Page
 Route::get('/',[HomeController::class,  'index'])->name('landing');
 Route::get('/galeri', [HomeController::class, 'galeri'])->name('galeri');
 Route::get('/staff', [HomeController::class, 'staff'])->name('staff');
 Route::get('/struktur', [HomeController::class, 'struktur'])->name('struktur');
+Route::get('/kompetensi', [HomeController::class, 'kompetensi'])->name('kompetensi');
 Route::get('/prestasi', [HomeController::class, 'prestasi'])->name('prestasi');
