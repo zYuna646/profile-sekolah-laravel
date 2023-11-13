@@ -42,7 +42,7 @@
                             Akademik
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Prestasi</a></li>
+                            <li><a class="dropdown-item" href="{{route('prestasi')}}">Prestasi</a></li>
                             <li><a class="dropdown-item" href="#">Link E-Raport</a></li>
                         </ul>
                     </li>
