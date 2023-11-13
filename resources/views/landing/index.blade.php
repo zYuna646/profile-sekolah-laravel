@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col">
             <div class="rounded shadow p-4">
-                <div class="row">
+                <div class="row gap-2">
                     <div class="col-auto d-flex align-item-center">
                         <i class="fa-solid fa-graduation-cap fa-2xl my-auto text-success"></i>
                     </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="col">
             <div class="rounded shadow p-4">
-                <div class="row">
+                <div class="row gap-2">
                     <div class="col-auto d-flex align-item-center">
                         <i class="fa-solid fa-users fa-2xl my-auto text-primary"></i>
                     </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="col">
             <div class="rounded shadow p-4">
-                <div class="row">
+                <div class="row gap-2">
                     <div class="col-auto d-flex align-item-center">
                         <i class="fa-solid fa-user-graduate fa-2xl my-auto text-warning"></i>
                     </div>
