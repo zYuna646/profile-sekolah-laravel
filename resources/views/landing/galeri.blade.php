@@ -12,7 +12,7 @@
     <hr class="mx-5 bg-danger border-5 border-top border-dark">
 
     <div class="container mb-5">
-        <div class="d-flex flex-wrap gap-2">
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
             <div class="card" style="width: 300px; height:450px">
                 <img src="assets/img/kegiatan 1.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
                 <div class="card-body text-center">

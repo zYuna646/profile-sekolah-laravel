@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[HomeController::class,  'index'])->name('landing');
 Route::get('/galeri', [HomeController::class, 'galeri'])->name('galeri');
+Route::get('/staff', [HomeController::class, 'staff'])->name('staff');

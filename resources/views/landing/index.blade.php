@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col">
             <div class="rounded shadow p-4">
-                <div class="row">
+                <div class="row gap-2">
                     <div class="col-auto d-flex align-item-center">
                         <i class="fa-solid fa-graduation-cap fa-2xl my-auto text-success"></i>
                     </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="col">
             <div class="rounded shadow p-4">
-                <div class="row">
+                <div class="row gap-2">
                     <div class="col-auto d-flex align-item-center">
                         <i class="fa-solid fa-users fa-2xl my-auto text-primary"></i>
                     </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="col">
             <div class="rounded shadow p-4">
-                <div class="row">
+                <div class="row gap-2">
                     <div class="col-auto d-flex align-item-center">
                         <i class="fa-solid fa-user-graduate fa-2xl my-auto text-warning"></i>
                     </div>
@@ -284,26 +284,6 @@
     </div>
 </div>
 <!--bagian bawah-->
-<footer>
-    <div class="container-fluid p-0 mt-3">
-        <div class="row">
-            <div class="col-lg-12 p-4" style="background-color:black">
-                <div>
-                    <div class=" ">
-                        <img src="assets/img/SMAN MODEL LOGO.png" alt="#">
-                        <P class="text-light">SMA NEGERI MODEL GORONTALO
-                            <br>Jl. Muchlis Rahim, Desa Panggulo Barat – Botupingge Kab Bone Bolango – Provinsi
-                            Gorontalo 96554 Indonesia
-                        </p>
-                    </div>
-                    <div class=" ">
-                        <P class="text-light">follow Us</P>
-                        <img src="assets/img/facebook-instagram-twitter-icons-png-12 1.png" alt="#">
-                    </div>
-                </div>
-            </div>
-        </div>
-</footer>
 </html>
 
 @endsection
