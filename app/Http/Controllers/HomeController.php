@@ -17,4 +17,7 @@ class HomeController extends Controller
     public function staff(){
         return view('landing.staff');
     }
+    public function struktur(){
+        return view('landing.struktur');
+    }
 }

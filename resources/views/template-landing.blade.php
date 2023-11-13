@@ -55,8 +55,9 @@
                             Staff
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="{{route('staff')}}">Guru & Tata Usaha</a></li>                        </ul>
+                            <li><a class="dropdown-item" href="{{route('struktur')}}">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="{{route('staff')}}">Guru & Tata Usaha</a></li>                        
+                            </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-bold" href="{{route('galeri')}}">Galeri Kegiatan</a>
