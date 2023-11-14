@@ -18,3 +18,15 @@
 .border-kompetensi{
     border: 1px solid #D37E00;
 }
+
+
+.btn-pelajari{
+    background-color: #D37E00;
+    color: white;
+    transition: all .2s;
+}
+
+.btn-pelajari:hover{
+    background-color: #a16100;
+    color: white;
+}
