@@ -26,4 +26,7 @@ class HomeController extends Controller
     public function prestasi(){
         return view('landing.prestasi');
     }
+    public function isi(){
+        return view('landing.isi');
+    }
 }
