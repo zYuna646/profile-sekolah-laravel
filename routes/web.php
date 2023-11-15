@@ -26,8 +26,15 @@ Route::get('/isi', [HomeController::class, 'isi'])->name('isi');
 //Route Dashboard Page
 Route::prefix('dashboard')->group(function(){
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+
+    //Route Kompetensi Keahlian
     Route::prefix('kompetensi')->group(function(){
         Route::get('/', [KompetensiController::class, 'index'])->name('dashboard.kompetensi');
         Route::get('/create', [KompetensiController::class, 'create'])->name('dashboard.kompetensi.create');
+        Route::post('/store', [KompetensiController::class, 'store'])->name('dashboard.kompetensi.store');
+        Route::get('/show/{$id}', [KompetensiController::class, 'show'])->name('dashboard.kompetensi.show');
+        Route::get('/edit/{$id}', [KompetensiController::class, 'edit'])->name('dashboard.kompetensi.edit');
+        Route::get('/update/{id}', [KompetensiController::class, 'update'])->name('dashboard.kompetensi.update');
+        Route::get('/destroy/{$id}', [KompetensiController::class, 'destroy'])->name('dashboard.kompetensi.destroy');
     });
 });

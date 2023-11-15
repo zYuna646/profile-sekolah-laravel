@@ -18,17 +18,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="">
-                        <td scope="row">R1C1</td>
-                        <td>R1C2</td>
-                        <td>R1C3</td>
-                        <td>R1C4</td>
-                        <td>
-                            <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></button>
-                            <button class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></button>
-                            <button class="btn btn-danger btn-sm"><i class="ti ti-trash fw-bolder"></i></button>
-                        </td>
-                    </tr>
+                    @foreach ($data as $value => $item)
+                        <tr class="">
+                            <td scope="row">{{$value + 1}}</td>
+                            <td>{{$item->nama}}</td>
+                            <td>{{$item->deskripsi}}</td>
+                            <td><img src="{{asset('storage/' . $item->foto_kompetensi)}}" alt=""></td>
+                            <td>
+                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></button>
+                                <button class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="ti ti-trash fw-bolder"></i></button>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

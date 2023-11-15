@@ -12,7 +12,8 @@ class KompetensiController extends Controller
      */
     public function index()
     {
-        return view('kompetensi.index');
+        $data = Kompetensi::all();
+        return view('kompetensi.index', compact('data'));
     }
 
     /**
@@ -20,7 +21,7 @@ class KompetensiController extends Controller
      */
     public function create()
     {
-        return view('struktur.detail');
+        return view('kompetensi.create');
     }
 
     /**
@@ -28,7 +29,13 @@ class KompetensiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Kompetensi::create($request->all());
+        if ($request->hasFile('foto_kompetensi')) {
+            $foto = $request->file('foto_kompetensi')->store('foto_kompetensi', 'public');
+            $data->foto_kompetensi = $foto;
+            $data->save();
+        }
+        return redirect()->route('dashboard.kompetensi');
     }
 
     /**
