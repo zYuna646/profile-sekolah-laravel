@@ -130,6 +130,88 @@
                     </div>
                 </div>
             </div>
+            
+
+            <!---Kelompok Kerja--->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>Pembina OSIS </h5>
+                    </div>
+                    <img src="assets/img/Pembina OSIS.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>tri susanti jasin. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>Pembina Pramuka</h5>
+                    </div>
+                    <img src="assets/img/Pembina Pramuka.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>Yunita Ahmad. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>Pembina UKS</h5>
+                    </div>
+                    <img src="assets/img/Pembina UKS.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>Yuwinda Igirisa. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>Koordinator Perpustakaan</h5>
+                    </div>
+                    <img src="assets/img/Koordinator Perpustakaan.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>Lisna Bau. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>Koordinator BK</h5>
+                    </div>
+                    <img src="assets/img/Koordinator BK.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>Nova Pontoiyo. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>Koordinator Bengel ATR</h5>
+                    </div>
+                    <img src="assets/img/Koordinator Bengek ATR.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>Rahma Saleh. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <h5>KURIKULUM KBM</h5>
+                    </div>
+                    <img src="assets/img/kURIKULUM KBM.jpg" alt="" class="mx-auto card-img-top">
+                    <div class="card-body text-center">
+                        <h3>Maryam Djafar. S.pD</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-----Kepala Unit Kegiatan-->
             <div class="col">
                 <div class="card h-100">
                     <div class="card-header text-center">
@@ -137,7 +219,7 @@
                     </div>
                     <img src="assets/img/Kepala Bengkel TKJ.jpg" alt="" class="mx-auto card-img-top">
                     <div class="card-body text-center">
-                        <h3>UMUSALAM JUMNA R IBRAHIM.S.Pd</h3>
+                        <h3>Umusalam Jumna R Iberahim, S.Pd</h3>
                     </div>
                 </div>
             </div>
@@ -155,14 +237,15 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-header text-center">
-                        <h5>Kepala Lab Pendidikan Agama Islam</h5>
+                        <h5>Kepala LAB Pendidian Agama Islam </h5>
                     </div>
-                    <img src="assets/img/Kepala LAB PAI.jpg" alt="" class="mx-auto card-img-top">
+                    <img src="assets/img/Kepala Lab PAI.jpg" alt="" class="mx-auto card-img-top">
                     <div class="card-body text-center">
-                        <h3>Tri Susanti Jasin. S.pD</h3>
+                        <h3>Syukrin Alimullah. S.Pd</h3>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     

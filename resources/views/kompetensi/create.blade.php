@@ -6,10 +6,10 @@
             <h2 class="fw-bolder text-primary">Tambah Kompetensi Keahlian</h2>
             <form>
                 <div class="form-group row">
-                    <label for="nama_jurusan" class="col-sm-2 col-form-label mx-1">Nama Jurusan</label>
+                    <label for="nama_jurusan" class="col-sm-2 col-form-label mx-1">Nama Kompetensi</label>
                     <div class="col-sm-10">
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih Jurusan</option>
+                            <option selected>Pilih Kompetensi</option>
                             <option value="1">Agribisnis Tanaman Pangan Dan Hortikultura (ATPH)</option>
                             <option value="1">Agribisnis Ternak Ruminansia (ATR)</option>
                             <option value="1">Agribisnis Pengolahan Hasil Pertanian (APHP)</option>
