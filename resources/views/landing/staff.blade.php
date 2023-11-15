@@ -140,7 +140,7 @@
                     </div>
                     <img src="assets/img/Pembina OSIS.jpg" alt="" class="mx-auto card-img-top">
                     <div class="card-body text-center">
-                        <h3>tri susanti jasin. S.pD</h3>
+                        <h3>Tri Susanti Jasin. S.pD</h3>
                     </div>
                 </div>
             </div>
