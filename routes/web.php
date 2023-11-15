@@ -26,5 +26,8 @@ Route::get('/isi', [HomeController::class, 'isi'])->name('isi');
 //Route Dashboard Page
 Route::prefix('dashboard')->group(function(){
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/kompetensi', [KompetensiController::class, 'index'])->name('dashboard.kompetensi');
+    Route::prefix('kompetensi')->group(function(){
+        Route::get('/', [KompetensiController::class, 'index'])->name('dashboard.kompetensi');
+        Route::get('/create', [KompetensiController::class, 'create'])->name('dashboard.kompetensi.create');
+    });
 });
