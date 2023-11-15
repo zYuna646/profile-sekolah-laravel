@@ -20,7 +20,7 @@ class KompetensiController extends Controller
      */
     public function create()
     {
-        return view('kompetensi.create');
+        return view('prestasi.create');
     }
 
     /**
