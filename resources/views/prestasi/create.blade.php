@@ -5,13 +5,19 @@
         <div class="card-body p-4">
             <h2 class="fw-bolder text-primary">Tambah Prestasi</h2>
             <form>
+                <div class="form-grup row">
+                    <label for="exampleInputPassword1" class="col-sm-2 col-form-label mx-1">Nama Siswa</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nama_siswa">
+                    </div>
+                  </div>
                 <div class="form-group row">
                     <label for="nama_jurusan" class="col-sm-2 col-form-label mx-1">Jenis Kelamin</label>
                     <div class="col-sm-10">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Pilih Jurusan</option>
-                            <option value="1">Perempuan</option>
-                            <option value="1">Laki-laki</option>
+                            <option value="p">Perempuan</option>
+                            <option value="l">Laki-laki</option>
                         </select>
                     </div>
                 </div>
