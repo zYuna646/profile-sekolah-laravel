@@ -22,17 +22,24 @@
                     </div>
                 </div>
                 <div class="form-grup row">
+                    <label for="exampleInputPassword1" class="col-sm-2 col-form-label mx-1">Jabatan</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nip">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grup row">
                     <label for="exampleInputPassword1" class="col-sm-2 col-form-label mx-1">NIP</label>
                     <div class="col-sm-10">
                     <input type="text" class="form-control" id="nip">
                     </div>
                   </div>
-                    <fieldset class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label ">Foto Staff</label>
-                        <div class="col-sm-10 my-2">
-                            <input type="file" class="form-control-file" id="foto_kompetensi">
-                        </div>
                 </div>
+                <fieldset class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label ">Foto Staff</label>
+                    <div class="col-sm-10 my-2">
+                        <input type="file" class="form-control-file" id="foto_kompetensi">
+                    </div>
                 </fieldset>
                 <div class="form-group row">
                     <div class="col-sm-10">
