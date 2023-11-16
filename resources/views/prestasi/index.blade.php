@@ -31,7 +31,7 @@
                         <td>
                             <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></button>
                             <button class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></button>
-                            <button class="btn btn-danger btn-sm"><i class="ti ti-trash fw-bolder"></i></button>
+                            <a class="btn btn-danger btn-sm" href="{{ url('dashboard/prestasi/destroy/' . $item->id) }}" ><i class="ti ti-trash fw-bolder"></i></a>
                         </td>
                     </tr>
                 @endforeach

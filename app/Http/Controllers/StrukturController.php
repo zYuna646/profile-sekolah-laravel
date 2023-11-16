@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Struktur;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class StrukturController extends Controller
 {
@@ -65,8 +66,16 @@ class StrukturController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Struktur $struktur)
+    public function destroy($id)
     {
-        //
+        $data = struktur::find($id);
+        $name = $data->foto;
+        if($name != null || $name != '') {
+            Storage::delete($name);
+        }
+
+        $data->delete();
+        
+        return redirect()->route('dashboard.struktur');
     }
 }

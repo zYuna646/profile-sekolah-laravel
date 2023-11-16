@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Prestasi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PrestasiController extends Controller
 {
@@ -65,8 +66,17 @@ class PrestasiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Prestasi $prestasi)
+    public function destroy($id)
     {
-        //
+        $data = Prestasi::find($id);
+        $name = $data->foto_siswa;
+        if($name != null || $name != '') {
+            Storage::delete($name);
+        }
+
+        $data->delete();
+        
+        return redirect()->route('dashboard.prestasi');
     }
+    
 }

@@ -47,7 +47,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/show/{$id}', [PrestasiController::class, 'show'])->name('dashboard.pretasi.show');
         Route::get('/edit/{$id}', [PrestasiController::class, 'edit'])->name('dashboard.prestasi.edit');
         Route::get('/update/{id}', [PrestasiController::class, 'update'])->name('dashboard.prestasi.update');
-        Route::get('/destroy/{$id}', [PrestasiController::class, 'destroy'])->name('dashboard.prestasi.destroy');
+        Route::get('/destroy/{id}', [PrestasiController::class, 'destroy'])->name('dashboard.prestasi.destroy.{id}');
     });
 
      //Route Kompetensi staff
@@ -58,7 +58,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/show/{$id}', [staffController::class, 'show'])->name('dashboard.staff.show');
         Route::get('/edit/{$id}', [staffController::class, 'edit'])->name('dashboard.staff.edit');
         Route::get('/update/{id}', [staffController::class, 'update'])->name('dashboard.staff.update');
-        Route::get('/destroy/{$id}', [staffController::class, 'destroy'])->name('dashboard.staff.destroy');
+        Route::get('/destroy/{id}', [staffController::class, 'destroy'])->name('dashboard.staff.destroy.{id}');
     });
 
     //Route Kompetensi struktur
@@ -69,7 +69,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/show/{$id}', [StrukturController::class, 'show'])->name('dashboard.struktur.show');
         Route::get('/edit/{$id}', [StrukturController::class, 'edit'])->name('dashboard.struktur.edit');
         Route::get('/update/{id}', [StrukturController::class, 'update'])->name('dashboard.struktur.update');
-        Route::get('/destroy/{$id}', [StrukturController::class, 'destroy'])->name('dashboard.struktur.destroy');
+        Route::get('/destroy/{id}', [StrukturController::class, 'destroy'])->name('dashboard.struktur.destroy.{id}');
     });
     //Route Kompetensi galeri
     Route::prefix('galeri')->group(function(){
@@ -79,7 +79,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/show/{$id}', [GaleriController::class, 'show'])->name('dashboard.galeri.show');
         Route::get('/edit/{$id}', [GaleriController::class, 'edit'])->name('dashboard.galeri.edit');
         Route::get('/update/{id}', [GaleriController::class, 'update'])->name('dashboard.galeri.update');
-        Route::get('/destroy/{$id}', [GaleriController::class, 'destroy'])->name('dashboard.galeri.destroy');
+        Route::get('/destroy/{id}', [GaleriController::class, 'destroy'])->name('dashboard.galeri.destroy.{id}');
     });
 });
 

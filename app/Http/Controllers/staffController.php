@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Staff;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class staffController  extends Controller
 {
@@ -62,9 +63,17 @@ class staffController  extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(staff $staff)
+    public function destroy($id)
     {
-        //
+        $data = staff::find($id);
+        $name = $data->foto;
+        if($name != null || $name != '') {
+            Storage::delete($name);
+        }
+
+        $data->delete();
+        
+        return redirect()->route('dashboard.staff');
     }
 }
 

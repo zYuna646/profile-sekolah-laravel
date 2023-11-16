@@ -17,8 +17,8 @@
                     <div class="col-sm-10">
                         <select class="form-select" aria-label="Default select example" name="jenis_kelamin">
                             <option selected>Pilih</option>
-                            <option value="p">Perempuan</option>
-                            <option value="l">Laki-laki</option>
+                            <option value="P">Perempuan</option>
+                            <option value="L">Laki-laki</option>
                         </select>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Galeri;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class GaleriController extends Controller
 {
@@ -65,8 +66,16 @@ class GaleriController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Galeri $galeri)
+    public function destroy($id)
     {
-        //
+        $data = galeri::find($id);
+        $name = $data->foto_kompetensi;
+        if($name != null || $name != '') {
+            Storage::delete($name);
+        }
+
+        $data->delete();
+        
+        return redirect()->route('dashboard.galeri');
     }
 }
