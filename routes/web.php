@@ -36,7 +36,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/show/{$id}', [KompetensiController::class, 'show'])->name('dashboard.kompetensi.show');
         Route::get('/edit/{$id}', [KompetensiController::class, 'edit'])->name('dashboard.kompetensi.edit');
         Route::get('/update/{id}', [KompetensiController::class, 'update'])->name('dashboard.kompetensi.update');
-        Route::get('/destroy/{$id}', [KompetensiController::class, 'destroy'])->name('dashboard.kompetensi.destroy');
+        Route::get('/destroy/{id}', [KompetensiController::class, 'destroy'])->name('dashboard.kompetensi.destroy.{id}');
     });
 
     //Route Kompetensi prestasi
@@ -66,7 +66,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/', [StrukturController::class, 'index'])->name('dashboard.struktur');
         Route::get('/create', [StrukturController::class, 'create'])->name('dashboard.struktur.create');
         Route::post('/store', [StrukturController::class, 'store'])->name('dashboard.struktur.store');
-        Route::get('/show/{$id}', [StrukturControllerr::class, 'show'])->name('dashboard.struktur.show');
+        Route::get('/show/{$id}', [StrukturController::class, 'show'])->name('dashboard.struktur.show');
         Route::get('/edit/{$id}', [StrukturController::class, 'edit'])->name('dashboard.struktur.edit');
         Route::get('/update/{id}', [StrukturController::class, 'update'])->name('dashboard.struktur.update');
         Route::get('/destroy/{$id}', [StrukturController::class, 'destroy'])->name('dashboard.struktur.destroy');

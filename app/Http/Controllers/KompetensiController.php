@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kompetensi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class KompetensiController extends Controller
 {
@@ -65,8 +66,16 @@ class KompetensiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Kompetensi $kompetensi)
+    public function destroy($id)
     {
-        //
+        $data = Kompetensi::find($id);
+        $name = $data->foto_kompetensi;
+        if($name != null || $name != '') {
+            Storage::delete($name);
+        }
+
+        $data->delete();
+        
+        return redirect()->route('dashboard.kompetensi');
     }
 }
