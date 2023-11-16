@@ -3,7 +3,7 @@
 @section('content')
     <div class="card shadow">
         <div class="card-body p-4">
-            <h2 class="fw-bolder text-primary">Tambah Data Struktur Organisasi</h2>
+            <h2 class="fw-bolder text-primary">Tambah Struktur Organisasi</h2>
             <form>
                 <fieldset class="form-group">
                     <label for="inputPassword3" class="col-sm-2 col-form-label ">Foto Kompetensi</label>

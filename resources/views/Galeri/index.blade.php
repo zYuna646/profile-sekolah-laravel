@@ -14,6 +14,7 @@
                         <th scope="col">Nama Kegiatan</th>
                         <th scope="col">Keterangan</th>
                         <th scope="col">Foto Kegiatan</th>
+                        <th scope="col">Opsi</th>
                     </tr>
                 </thead>
                 <tbody>
