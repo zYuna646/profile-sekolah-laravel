@@ -13,6 +13,7 @@
                         <tr>
                             <th scope="col">No.</th>
                             <th scope="col">Nama Siswa</th>
+                            <th scope="col">Jenis Kelamin</th>
                             <th scope="col">Keterangan</th>
                             <th scope="col">Foto</th>
                             <th scope="col">Opsi</th>
@@ -23,9 +24,10 @@
                     @foreach ($data as $value => $item)
                     <tr class="">
                         <td scope="row">{{$value + 1}}</td>
-                        <td>{{$item->nama}}</td>
+                        <td>{{$item->nama_siswa}}</td>
+                        <td>{{$item->jenis_kelamin}}</td>
                         <td>{{$item->keterangan}}</td>
-                        <td><img src="{{asset('storage/' . $item->foto_siswa)}}" alt=""></td>
+                        <td><img src="{{asset('storage/' . $item->foto_siswa)}}" style="width:5rem" alt=""></td>
                         <td>
                             <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></button>
                             <button class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></button>

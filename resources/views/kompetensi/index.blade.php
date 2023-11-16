@@ -23,7 +23,7 @@
                             <td scope="row">{{$value + 1}}</td>
                             <td>{{$item->nama}}</td>
                             <td>{{$item->deskripsi}}</td>
-                            <td><img src="{{asset('storage/' . $item->foto_kompetensi)}}" alt=""></td>
+                            <td><img src="{{asset('storage/' . $item->foto_kompetensi)}}" style="width:5rem" alt=""></td>
                             <td>
                                 <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></button>
                                 <button class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></button>

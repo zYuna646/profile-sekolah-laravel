@@ -67,7 +67,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                            <a class="sidebar-link" href="{{ route('dashboard.prestasi') }}" aria-expanded="false">
                                 <span>
                                   <i class="fa-solid fa-trophy"></i>
                                 </span>
@@ -75,7 +75,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                          <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                          <a class="sidebar-link" href="{{ route('dashboard.staff') }}" aria-expanded="false">
                               <span>
                                 <i class="fa-solid fa-user"></i>
                               </span>

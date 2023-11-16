@@ -1,19 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Prestasi;
+use App\Models\Staff;
 use Illuminate\Http\Request;
 
-class PrestasiController extends Controller
+class staffController  extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        $data = Prestasi::all();
-        return view('prestasi.index', compact('data'));
+        $data = Staff::all();
+        return view('staff.index', compact('data'));
     }
 
     /**
@@ -21,7 +17,7 @@ class PrestasiController extends Controller
      */
     public function create()
     {
-        return view('prestasi.create');
+        return view('staff.create');
     }
 
     /**
@@ -29,19 +25,20 @@ class PrestasiController extends Controller
      */
     public function store(Request $request)
     {
-        $data = Prestasi::create($request->all());
-        if ($request->hasFile('foto_siswa')) {
-            $foto = $request->file('foto_siswa')->store('foto_siswa', 'public');
-            $data->foto_siswa = $foto;
+        $data = Staff::create($request->all());
+        if ($request->hasFile('foto')) {
+            
+            $foto = $request->file('foto')->store('foto', 'public');
+            $data->foto = $foto;
             $data->save();
         }
-        return redirect()->route('dashboard.prestasi');
+        return redirect()->route('dashboard.staff');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Prestasi $prestasi)
+    public function show(Staff $staff)
     {
         //
     }
@@ -49,7 +46,7 @@ class PrestasiController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Prestasi $prestasi)
+    public function edit(Staff $staff)
     {
         //
     }
@@ -57,7 +54,7 @@ class PrestasiController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Prestasi $prestasi)
+    public function update(Request $request, staff $staff)
     {
         //
     }
@@ -65,8 +62,10 @@ class PrestasiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Prestasi $prestasi)
+    public function destroy(staff $staff)
     {
         //
     }
 }
+
+

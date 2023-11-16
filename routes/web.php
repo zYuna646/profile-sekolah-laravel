@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{HomeController, DashboardController, KompetensiController, PrestasiController};
+use App\Http\Controllers\{HomeController, DashboardController, KompetensiController, PrestasiController, staffController};
 use App\Models\Prestasi;
 use Illuminate\Support\Facades\Route;
 
@@ -48,5 +48,16 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/edit/{$id}', [PrestasiController::class, 'edit'])->name('dashboard.prestasi.edit');
         Route::get('/update/{id}', [PrestasiController::class, 'update'])->name('dashboard.prestasi.update');
         Route::get('/destroy/{$id}', [PrestasiController::class, 'destroy'])->name('dashboard.prestasi.destroy');
+    });
+
+     //Route Kompetensi staff
+     Route::prefix('staff')->group(function(){
+        Route::get('/', [staffController::class, 'index'])->name('dashboard.staff');
+        Route::get('/create', [staffController::class, 'create'])->name('dashboard.staff.create');
+        Route::post('/store', [staffController::class, 'store'])->name('dashboard.staff.store');
+        Route::get('/show/{$id}', [staffController::class, 'show'])->name('dashboard.staff.show');
+        Route::get('/edit/{$id}', [staffController::class, 'edit'])->name('dashboard.staff.edit');
+        Route::get('/update/{id}', [staffController::class, 'update'])->name('dashboard.staff.update');
+        Route::get('/destroy/{$id}', [staffController::class, 'destroy'])->name('dashboard.staff.destroy');
     });
 });
