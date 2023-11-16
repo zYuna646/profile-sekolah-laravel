@@ -16,7 +16,7 @@
             <div class="card" style="width: 300px; height:450px">
                 <img src="assets/img/Nabil Buato.jpg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
                 <div class="card-body text-center">
-                    <h2>Prestasi Nasional</h2>
+                    <h2>Nabil</h2>
                     <p>Peserta Raimuna Nasional di Cibubur</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus unde magnam quaerat suscipit! Sapiente, magni! </p>
                 </div>
@@ -24,7 +24,7 @@
             <div class="card" style="width: 300px; height:450px">
                 <img src="assets/img/Dimas Purnomo.jpg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
                 <div class="card-body text-center">
-                    <h2>Prestasi regional</h2>
+                    <h2>Dimas Purnomo</h2>
                     <p>RU Putra batik</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt molestias sit alias eveniet doloremque, vero quaerat ea! </p>
                 </div>
@@ -32,7 +32,7 @@
             <div class="card" style="width: 300px; height:450px">
                 <img src="assets/img/Ferdiansyah Nusi.jpg" alt="" class="card-img-top w-100 object-fit-fill" style="height: 200px">
                 <div class="card-body text-center">
-                    <h2>Prestasi Nasional</h2>
+                    <h2>Ferdiansyah Nusi</h2>
                     <p>Juara 3 O2SN Cabang Atletik</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus dolores mollitia harum nostrum dolor veniam  provident!</p>
                 </div>
@@ -40,7 +40,7 @@
             <div class="card" style="width: 300px; height:450px">
                 <img src="assets/img/Kurnia.jpg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
                 <div class="card-body text-center">
-                    <h2>Prestasi Regional</h2>
+                    <h2>Kurnia</h2>
                     <p>Praskibraka 17 Agustus 2023</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mollitia harum nostrum dolor veniam deserunt provident</p>
                 </div>
