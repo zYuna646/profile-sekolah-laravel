@@ -84,7 +84,7 @@
                       </li>
                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+                            <a class="sidebar-link" href="{{ route('dashboard.struktur') }}" aria-expanded="false">
                                 <span>
                                   <i class="fa-solid fa-users"></i>
                                 </span>
@@ -92,7 +92,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+                            <a class="sidebar-link" href="{{ route('dashboard.galeri') }}" aria-expanded="false">
                                 <span>
                                   <i class="fa-solid fa-image"></i>
                                 </span>

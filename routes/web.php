@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{HomeController, DashboardController, KompetensiController, PrestasiController, staffController};
+use App\Http\Controllers\{HomeController, DashboardController, KompetensiController, PrestasiController, staffController,StrukturController, GaleriController};
 use App\Models\Prestasi;
 use Illuminate\Support\Facades\Route;
 
@@ -59,5 +59,26 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/edit/{$id}', [staffController::class, 'edit'])->name('dashboard.staff.edit');
         Route::get('/update/{id}', [staffController::class, 'update'])->name('dashboard.staff.update');
         Route::get('/destroy/{$id}', [staffController::class, 'destroy'])->name('dashboard.staff.destroy');
+    });
+
+    //Route Kompetensi staff
+    Route::prefix('Struktur')->group(function(){
+        Route::get('/', [StrukturController::class, 'index'])->name('dashboard.struktur');
+        Route::get('/create', [StrukturController::class, 'create'])->name('dashboard.struktur.create');
+        Route::post('/store', [StrukturController::class, 'store'])->name('dashboard.struktur.store');
+        Route::get('/show/{$id}', [StrukturControllerr::class, 'show'])->name('dashboard.struktur.show');
+        Route::get('/edit/{$id}', [StrukturController::class, 'edit'])->name('dashboard.struktur.edit');
+        Route::get('/update/{id}', [StrukturController::class, 'update'])->name('dashboard.struktur.update');
+        Route::get('/destroy/{$id}', [StrukturController::class, 'destroy'])->name('dashboard.struktur.destroy');
+    });
+
+    Route::prefix('galeri')->group(function(){
+        Route::get('/', [GaleriController::class, 'index'])->name('dashboard.galeri');
+        Route::get('/create', [GaleriController::class, 'create'])->name('dashboard.galeri.create');
+        Route::post('/store', [GaleriController::class, 'store'])->name('dashboard.galeri.store');
+        Route::get('/show/{$id}', [GaleriController::class, 'show'])->name('dashboard.galeri.show');
+        Route::get('/edit/{$id}', [GaleriController::class, 'edit'])->name('dashboard.galeri.edit');
+        Route::get('/update/{id}', [GaleriController::class, 'update'])->name('dashboard.galeri.update');
+        Route::get('/destroy/{$id}', [GaleriController::class, 'destroy'])->name('dashboard.galeri.destroy');
     });
 });
