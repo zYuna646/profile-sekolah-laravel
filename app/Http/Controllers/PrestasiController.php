@@ -12,7 +12,8 @@ class PrestasiController extends Controller
      */
     public function index()
     {
-        //
+        $data = Prestasi::all();
+        return view('prestasi.index', compact('data'));
     }
 
     /**
@@ -20,7 +21,7 @@ class PrestasiController extends Controller
      */
     public function create()
     {
-        //
+        return view('prestasi.create');
     }
 
     /**
@@ -28,7 +29,13 @@ class PrestasiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = prestasi::create($request->all());
+        if ($request->hasFile('foto_siswa')) {
+            $foto = $request->file('foto_siswa')->store('foto_siswa', 'public');
+            $data->foto_siswa = $foto;
+            $data->save();
+        }
+        return redirect()->route('dashboard.prestasi');
     }
 
     /**

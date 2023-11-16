@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\{HomeController, DashboardController, KompetensiController};
+use App\Http\Controllers\{HomeController, DashboardController, KompetensiController, PrestasiController};
+use App\Models\Prestasi;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,5 +37,16 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/edit/{$id}', [KompetensiController::class, 'edit'])->name('dashboard.kompetensi.edit');
         Route::get('/update/{id}', [KompetensiController::class, 'update'])->name('dashboard.kompetensi.update');
         Route::get('/destroy/{$id}', [KompetensiController::class, 'destroy'])->name('dashboard.kompetensi.destroy');
+    });
+
+    //Route Kompetensi prestasi
+    Route::prefix('prestasi')->group(function(){
+        Route::get('/', [PrestasiController::class, 'index'])->name('dashboard.prestasi');
+        Route::get('/create', [PrestasiController::class, 'create'])->name('dashboard.prestasi.create');
+        Route::post('/store', [PrestasiController::class, 'store'])->name('dashboard.prestasi.store');
+        Route::get('/show/{$id}', [PrestasiController::class, 'show'])->name('dashboard.pretasi.show');
+        Route::get('/edit/{$id}', [PrestasiController::class, 'edit'])->name('dashboard.prestasi.edit');
+        Route::get('/update/{id}', [PrestasiController::class, 'update'])->name('dashboard.prestasi.update');
+        Route::get('/destroy/{$id}', [PrestasiController::class, 'destroy'])->name('dashboard.prestasi.destroy');
     });
 });

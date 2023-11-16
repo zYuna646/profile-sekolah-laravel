@@ -15,7 +15,7 @@
                     <label for="nama_jurusan" class="col-sm-2 col-form-label mx-1">Jenis Kelamin</label>
                     <div class="col-sm-10">
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih Jurusan</option>
+                            <option selected>Pilih</option>
                             <option value="p">Perempuan</option>
                             <option value="l">Laki-laki</option>
                         </select>
