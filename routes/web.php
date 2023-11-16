@@ -33,10 +33,10 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/', [KompetensiController::class, 'index'])->name('dashboard.kompetensi');
         Route::get('/create', [KompetensiController::class, 'create'])->name('dashboard.kompetensi.create');
         Route::post('/store', [KompetensiController::class, 'store'])->name('dashboard.kompetensi.store');
-        Route::get('/show/{$id}', [KompetensiController::class, 'show'])->name('dashboard.kompetensi.show');
-        Route::get('/edit/{$id}', [KompetensiController::class, 'edit'])->name('dashboard.kompetensi.edit');
-        Route::get('/update/{id}', [KompetensiController::class, 'update'])->name('dashboard.kompetensi.update');
-        Route::get('/destroy/{id}', [KompetensiController::class, 'destroy'])->name('dashboard.kompetensi.destroy.{id}');
+        Route::get('/show/{id}', [KompetensiController::class, 'show'])->name('dashboard.kompetensi.show');
+        Route::get('/edit/{id}', [KompetensiController::class, 'edit'])->name('dashboard.kompetensi.edit');
+        Route::put('/update/{id}', [KompetensiController::class, 'update'])->name('dashboard.kompetensi.update');
+        Route::delete('/destroy/{id}', [KompetensiController::class, 'destroy'])->name('dashboard.kompetensi.destroy');
     });
 
     //Route Kompetensi prestasi
