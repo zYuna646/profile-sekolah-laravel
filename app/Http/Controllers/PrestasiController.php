@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Prestasi;
+use App\Models\Staff;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -42,25 +43,37 @@ class PrestasiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Prestasi $prestasi)
+    public function show(string $id)
     {
-        //
+        $kompetensi = Prestasi::find($id);
+        return view('kompetensi.show', compact('kompetensi'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Prestasi $prestasi)
+    public function edit(string $id)
     {
-        //
+        $data = Prestasi::find($id);
+        return view('prestasi.edit', compact('data'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Prestasi $prestasi)
+    public function update(Request $request, string $id)
     {
-        //
+        $prestasi = Prestasi::find($id);
+        $input = $request->all();
+        $input['foto_siswa'] = $prestasi->foto_siswa;
+        if ($request->hasFile('foto_siswa')) {
+            Storage::disk('public')->delete($prestasi->foto_siswa);
+            
+            $fotoBaru = Storage::disk('public')->put('images/foto_siswa', $request->file('foto_siswa'));
+            $input['foto_siswa'] = $fotoBaru;
+        }
+        $prestasi->update($input);
+        return redirect()->route('dashboard.prestasi');
     }
 
     /**
@@ -71,12 +84,11 @@ class PrestasiController extends Controller
         $data = Prestasi::find($id);
         $name = $data->foto_siswa;
         if($name != null || $name != '') {
-            Storage::delete($name);
+            Storage::disk('public')->delete($name);
         }
 
         $data->delete();
         
         return redirect()->route('dashboard.prestasi');
     }
-    
 }

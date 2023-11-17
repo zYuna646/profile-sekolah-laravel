@@ -50,17 +50,28 @@ class GaleriController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Galeri $galeri)
+    public function edit(string $id)
     {
-        //
+        $data = Galeri::find($id);
+        return view('galeri.edit', compact('data'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Galeri $galeri)
+    public function update(Request $request, string $id)
     {
-        //
+        $Galeri = Galeri::find($id);
+        $input = $request->all();
+        $input['foto_galeri'] = $Galeri->foto_galeri;
+        if ($request->hasFile('foto_galeri')) {
+            Storage::disk('public')->delete($Galeri->foto_galeri);
+            
+            $fotoBaru = Storage::disk('public')->put('images/foto_galeri', $request->file('foto_galeri'));
+            $input['foto_galeri'] = $fotoBaru;
+        }
+        $Galeri->update($input);
+        return redirect()->route('dashboard.galeri');
     }
 
     /**
@@ -68,14 +79,15 @@ class GaleriController extends Controller
      */
     public function destroy($id)
     {
-        $data = galeri::find($id);
-        $name = $data->foto_kompetensi;
+        $data = Galeri::find($id);
+        $name = $data->foto_galeri;
         if($name != null || $name != '') {
-            Storage::delete($name);
+            Storage::disk('public')->delete($name);
         }
 
         $data->delete();
         
         return redirect()->route('dashboard.galeri');
     }
+
 }

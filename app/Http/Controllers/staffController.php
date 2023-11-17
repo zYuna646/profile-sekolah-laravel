@@ -47,17 +47,28 @@ class staffController  extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Staff $staff)
+    public function edit(string $id)
     {
-        //
+        $data = Staff::find($id);
+        return view('staff.edit', compact('data'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, staff $staff)
+    public function update(Request $request, string $id)
     {
-        //
+        $Staff = Staff::find($id);
+        $input = $request->all();
+        $input['foto'] = $Staff->foto;
+        if ($request->hasFile('foto')) {
+            Storage::disk('public')->delete($Staff->foto);
+            
+            $fotoBaru = Storage::disk('public')->put('images/foto', $request->file('foto'));
+            $input['foto'] = $fotoBaru;
+        }
+        $Staff->update($input);
+        return redirect()->route('dashboard.staff');
     }
 
     /**
@@ -65,10 +76,10 @@ class staffController  extends Controller
      */
     public function destroy($id)
     {
-        $data = staff::find($id);
+        $data = Staff::find($id);
         $name = $data->foto;
         if($name != null || $name != '') {
-            Storage::delete($name);
+            Storage::disk('public')->delete($name);
         }
 
         $data->delete();
