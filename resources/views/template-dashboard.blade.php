@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin SMK Model Gorontalo</title>
-    <link rel="shortcut icon" type="image/png" href="assetsDashboard/images/logos/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="assetsDashboard/images/logos/SMAN MODEL LOGO.png" />
     {{-- <link rel="stylesheet" href="assetsDashboard/css/styles.min.css" /> --}}
     <link rel="stylesheet" href="{{ asset('assetsDashboard') }}/css/styles.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,7 +30,7 @@
                             <img src="{{ asset('assets') }}/img/SMAN MODEL LOGO.png" style="width:50px" />
                         </div>
                         <div class="col mr-3 mt-3 ">
-                            <h4 class="fw-bolder">SIKOLA</h4>
+                            <h4 class="fw-bolder">SMKN MODEL</h4>
                         </div>
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -99,27 +99,6 @@
                                 <span class="hide-menu">Galeri Kegiatan</span>
                             </a>
                         </li>
-                        <li class="nav-small-cap">
-                            <i class="fa-solid fa-image"></i>
-                            <span class="hide-menu">Admin</span>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="{{ route('login') }}" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-login"></i>
-                                </span>
-                                <span class="hide-menu">Login</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-user-plus"></i>
-                                </span>
-                                <span class="hide-menu">Register</span>
-                            </a>
-                        </li>
-                      </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
