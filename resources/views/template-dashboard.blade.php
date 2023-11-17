@@ -67,7 +67,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="{{ route('dashboard.prestasi') }}" aria-expanded="false">
+                            <a class="sidebar-link {{ request()->is('dashboard/prestasi*') ? 'active' : '' }}" href="{{ route('dashboard.prestasi') }}" aria-expanded="false">
                                 <span>
                                   <i class="fa-solid fa-trophy"></i>
                                 </span>
@@ -75,7 +75,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                          <a class="sidebar-link" href="{{ route('dashboard.staff') }}" aria-expanded="false">
+                          <a class="sidebar-link {{ request()->is('dashboard/staff*') ? 'active' : '' }}" href="{{ route('dashboard.staff') }}" aria-expanded="false">
                               <span>
                                 <i class="fa-solid fa-user"></i>
                               </span>
@@ -84,7 +84,7 @@
                       </li>
                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="{{ route('dashboard.struktur') }}" aria-expanded="false">
+                            <a class="sidebar-link {{ request()->is('dashboard/struktur*') ? 'active' : '' }}" href="{{ route('dashboard.struktur') }}" aria-expanded="false">
                                 <span>
                                   <i class="fa-solid fa-users"></i>
                                 </span>
@@ -92,7 +92,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="{{ route('dashboard.galeri') }}" aria-expanded="false">
+                            <a class="sidebar-link {{ request()->is('dashboard/galeri*') ? 'active' : '' }}" href="{{ route('dashboard.galeri') }}" aria-expanded="false">
                                 <span>
                                   <i class="fa-solid fa-image"></i>
                                 </span>
@@ -165,7 +165,7 @@
                                             <i class="ti ti-list-check fs-6"></i>
                                             <p class="mb-0 fs-3">My Task</p>
                                         </a>
-                                        <a href="./authentication-login.html"
+                                        <a href="{{route('logout')}}"
                                             class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                                     </div>
                                 </div>
