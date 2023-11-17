@@ -39,9 +39,10 @@ class staffController  extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Staff $staff)
+    public function show(string $id)
     {
-        //
+        $staff = staff::find($id);
+        return view('staff.show', compact('staff'));
     }
 
     /**

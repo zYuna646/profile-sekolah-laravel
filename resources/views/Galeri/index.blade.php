@@ -25,9 +25,22 @@
                             <td>{{$item->keterangan}}</td>
                             <td><img src="{{asset('storage/' . $item->foto_galeri)}}" style="width:5rem" alt=""></td>
                             <td>
-                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></button>
-                                <button class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></button>
-                                <a class="btn btn-danger btn-sm" href="{{ url('dashboard/galeri/destroy/' . $item->id) }}"><i class="ti ti-trash fw-bolder"></i></a>
+                                <div class="d-flex gap-2 h-100">
+                                    <div class="col-auto">
+                                        <a href="{{route('dashboard.galeri.show', $item->id)}}" class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            data-bs-title="Detail"><i class="ti ti-eye fw-bolder"></i></a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="{{route('dashboard.galeri.edit', $item->id)}}" class="btn btn-warning btn-sm"><i class="ti ti-edit fw-bolder"></i></a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <form action="{{ route('dashboard.galeri.destroy', $item->id) }}" method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button class="btn btn-danger btn-sm"><i class="ti ti-trash fw-bolder"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

@@ -176,7 +176,7 @@
                             class="bg-light p-2 rounded-circle shadow-1" style="widht:50px">
                     </div>
                     <div class="text-light text-center">
-                        <h4 class="mt-4">Kerjasama Luas</h4>
+                        <h4 class="mt-4">Kemitraan Yang Luas</h4>
                         <p class="mt-3">Memperbesar kesempatan para peserta didik untuk bisa bekerja sebelum
                             lulus.</p>
                     </div>

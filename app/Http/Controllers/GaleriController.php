@@ -42,9 +42,10 @@ class GaleriController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Galeri $galeri)
+    public function show(string $id)
     {
-        //
+        $galeri = galeri::find($id);
+        return view('galeri.show', compact('galeri'));
     }
 
     /**

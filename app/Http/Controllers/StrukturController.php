@@ -42,25 +42,37 @@ class StrukturController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Struktur $struktur)
+    public function show(string $id)
     {
-        //
+        $struktur = struktur::find($id);
+        return view('struktur.show', compact('struktur'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Struktur $struktur)
+    public function edit(string $id)
     {
-        //
+        $data = Struktur::find($id);
+        return view('struktur.edit', compact('data'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Struktur $struktur)
+    public function update(Request $request, string $id)
     {
-        //
+        $Struktur = Struktur::find($id);
+        $input = $request->all();
+        $input['foto'] = $Struktur->foto;
+        if ($request->hasFile('foto_struktur')) {
+            Storage::disk('public')->delete($Struktur->foto);
+            
+            $fotoBaru = Storage::disk('public')->put('images/foto', $request->file('foto'));
+            $input['foto_struktur'] = $fotoBaru;
+        }
+        $Struktur->update($input);
+        return redirect()->route('dashboard.struktur');
     }
 
     /**
@@ -68,10 +80,10 @@ class StrukturController extends Controller
      */
     public function destroy($id)
     {
-        $data = struktur::find($id);
+        $data = Struktur::find($id);
         $name = $data->foto;
         if($name != null || $name != '') {
-            Storage::delete($name);
+            Storage::disk('public')->delete($name);
         }
 
         $data->delete();

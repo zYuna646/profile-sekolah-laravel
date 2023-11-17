@@ -45,8 +45,8 @@ class PrestasiController extends Controller
      */
     public function show(string $id)
     {
-        $kompetensi = Prestasi::find($id);
-        return view('kompetensi.show', compact('kompetensi'));
+        $prestasi = Prestasi::find($id);
+        return view('prestasi.show', compact('prestasi'));
     }
 
     /**

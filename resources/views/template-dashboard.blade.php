@@ -104,7 +104,7 @@
                             <span class="hide-menu">Admin</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                            <a class="sidebar-link" href="{{ route('login') }}" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-login"></i>
                                 </span>
