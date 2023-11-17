@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('kompetensis', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->string('foto_kompetensi');
             $table->timestamps();
         });

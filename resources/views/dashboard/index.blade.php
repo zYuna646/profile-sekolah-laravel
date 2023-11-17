@@ -10,7 +10,7 @@
                     </div>
                     <div class="col">
                         <h5 class="card-title">Jumlah Kompetensi</h5>
-                        <h6>5</h6>
+                        <h6>{{$komp}}</h6>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="col">
                         <h5 class="card-title">Jumlah Staff</h5>
-                        <h6>34</h6>
+                        <h6>{{$staff}}</h6>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col">
                         <h5 class="card-title">Jumlah Prestasi</h5>
-                        <h6>5</h6>
+                        <h6>{{$prestasi}}</h6>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="col">
                         <h5 class="card-title">Galeri Kegiatan</h5>
-                        <h6>20</h6>
+                        <h6>{{$galeri}}</h6>
                     </div>
                 </div>
             </div>

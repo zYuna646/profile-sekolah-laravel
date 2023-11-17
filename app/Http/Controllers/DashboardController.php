@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Models\{User};
+use App\Models\{User, Galeri, Kompetensi, Prestasi, Staff};
 
 use Illuminate\Http\Request;
 
@@ -10,6 +10,10 @@ class DashboardController extends Controller
     //
 
     public function index(){
-        return view('dashboard.index');
+        $komp = Kompetensi::count();
+        $galeri = Galeri::count();
+        $prestasi = Prestasi::count();
+        $staff = Staff::count();
+        return view('dashboard.index', compact('komp', 'galeri', 'prestasi', 'staff'));
     }
 }

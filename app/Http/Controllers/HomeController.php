@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\{Kompetensi, Galeri};
 
 class HomeController extends Controller
 {
@@ -21,7 +22,8 @@ class HomeController extends Controller
         return view('landing.struktur');
     }
     public function kompetensi(){
-        return view('landing.kompetensi');
+        $komp_data = Kompetensi::all();
+        return view('landing.kompetensi', compact('komp_data'));
     }
     public function prestasi(){
         return view('landing.prestasi');
