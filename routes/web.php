@@ -21,6 +21,7 @@ Route::get('/galeri', [HomeController::class, 'galeri'])->name('galeri');
 Route::get('/staff', [HomeController::class, 'staff'])->name('staff');
 Route::get('/struktur', [HomeController::class, 'struktur'])->name('struktur');
 Route::get('/kompetensi', [HomeController::class, 'kompetensi'])->name('kompetensi');
+Route::get('/detail-kompetensi/{id}', [HomeController::class, 'detail_kompetensi'])->name('detail-kompetensi');
 Route::get('/prestasi', [HomeController::class, 'prestasi'])->name('prestasi');
 Route::get('/isi', [HomeController::class, 'isi'])->name('isi');
 

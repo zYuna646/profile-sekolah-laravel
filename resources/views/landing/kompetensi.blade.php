@@ -25,7 +25,7 @@
                         </div>
                         <div class="card-footer border-0 bg-white">
                             <div class="d-grid mx-auto p-4">
-                                <button class="btn rounded-pill btn-pelajari">Pelajari Lebih Lanjut</button>
+                                <a href="{{route('detail-kompetensi', $item->id)}}" class="btn rounded-pill btn-pelajari">Pelajari Lebih Lanjut</a>
                             </div>
                         </div>
                     </div>

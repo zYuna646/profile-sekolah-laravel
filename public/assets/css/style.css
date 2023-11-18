@@ -30,3 +30,29 @@
     background-color: #a16100;
     color: white;
 }
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .gallery-item {
+    flex: 0 1 calc(33.33% - 16px); /* 3 columns with a 16px gap */
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
