@@ -16,13 +16,33 @@
                 incidunt quidem obcaecati similique, ex, omnis soluta tempora rem minima recusandae architecto? Aut mollitia
                 facere possimus.</p>
             <!--untuk tampilan kompetensi-->
-            <div class="container p-5">
+            <div class="container mt-5">
                 <div class="row justify-content-center">
-                    <div class="col">
+                    <div class="col-md-6">
                         <img src="assets/img/kegiatan 7.jpeg" alt="" class="image" style="width : 200px">
                     </div>
 
-                    <div class="col">
+                    <div class="col-md-6">
+                        <img src="assets/img/kegiatan 7.jpeg" alt="" class="image" style="width : 200px">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 pt-2">
+                        <img src="assets/img/kegiatan 7.jpeg" alt="" class="image" style="width : 200px">
+                    </div>
+
+                    <div class="col-md-6 pt-2">
+                        <img src="assets/img/kegiatan 7.jpeg" alt="" class="image" style="width : 200px">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 pt-2">
+                        <img src="assets/img/kegiatan 7.jpeg" alt="" class="image" style="width : 200px">
+                    </div>
+
+                    <div class="col-md-6 pt-2">
                         <img src="assets/img/kegiatan 7.jpeg" alt="" class="image" style="width : 200px">
                     </div>
                 </div>

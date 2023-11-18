@@ -14,14 +14,14 @@
 
 
     <div class="container px-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
             @foreach ($komp_data as $item)
                 <div class="col d-flex">
                     <div class="card border-kompetensi">
                         <div class="card-body text-center">
                             <i class="fa-solid fa-computer fa-2xl mb-5 mt-4" style="color: #D37E00"></i>
                             <h4 class="card-title">{{ $item->nama }}</h4>
-                            <p class="card-text">{{ Str::limit($item->deskripsi, 50) . '...' }}</p>
+                            <p class="card-text">{{ Str::limit($item->deskripsi, 100) . '...' }}</p>
                         </div>
                         <div class="card-footer border-0 bg-white">
                             <div class="d-grid mx-auto p-4">
@@ -30,6 +30,7 @@
                         </div>
                     </div>
                 </div>
+
             @endforeach
         </div>
     </div>

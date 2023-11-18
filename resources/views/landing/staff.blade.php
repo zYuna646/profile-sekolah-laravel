@@ -36,7 +36,7 @@
                     <div class="card-header text-center">
                         <h5>Wakasek <br> Kurikulum</h5>
                     </div>
-                    <img src="assets/img/wakasek kurikulum.jpg" alt="" class="mx-auto card-img-top">
+                    <img src="assets/img/wakasek kurikulum.jpg" alt="" class="mx-auto card-img-top object-fit-full" >
                     <div class="card-body text-center">
                         <h3>Nurain Djafar M.pd</h3>
                     </div>
