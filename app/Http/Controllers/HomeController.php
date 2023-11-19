@@ -23,8 +23,11 @@ class HomeController extends Controller
     }
     public function kompetensi(){
         $komp_data = Kompetensi::all();
-        //return view('landing.kompetensi', compact('komp_data'));
         return view('landing.kompetensi', compact('komp_data'));
+    }
+    public function detail_kompetensi(string $id){
+        $kompetensi = Kompetensi::find($id);
+        return view('landing.detail-kompetensi', compact('kompetensi'));
     }
     public function prestasi(){
         return view('landing.prestasi');
