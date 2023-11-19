@@ -11,23 +11,27 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $user = Auth::user();
-        if($user){
+        if ($user) {
             if ($user->role == 'admin') {
-                return redirect()->intended('admin');
+                return redirect()->intended('dashboard');
+            } else {
+                return redirect()->intended('dashboard-guru');
             }
         }
         return view('auth.login');
     }
 
-    public function login_proses(Request $request){
+    public function login_proses(Request $request)
+    {
         $request->validate([
             'email' => 'required',
             'password' => 'required'
         ]);
 
-        $credent = $request->only('email','password');
+        $credent = $request->only('email', 'password');
         if (Auth::attempt($credent)) {
             $user = Auth::user();
             if ($user->role == 'admin') {
@@ -37,11 +41,13 @@ class AuthController extends Controller
         return redirect()->route('login')->withInput()->with(['error' => 'Data yang dimasukkan salah']);
     }
 
-    public function regist(){
+    public function regist()
+    {
         return view('auth.regist');
     }
 
-    public function regist_proses(Request $request){
+    public function regist_proses(Request $request)
+    {
         $validator = $request->validate([
             'name' => 'required',
             'email' => 'required|unique:users',
@@ -61,7 +67,8 @@ class AuthController extends Controller
         return redirect()->route('login');
     }
 
-    public function logout(Request $request){
+    public function logout(Request $request)
+    {
         $request->session()->flush();
 
         Auth::logout();

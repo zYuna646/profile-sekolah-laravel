@@ -12,21 +12,31 @@
     <hr class="mx-5 bg-danger border-5 border-top border-dark">
     <div class="card col-sm-4 justify-content-center mx-auto" style="width: 75rem">
         <div class="card-body">
-            <h1 class="display-5 fw-bold lh-1 mb-3"><span style="color: #D37E00">{{$kompetensi->nama}}</span></h1>
-            <p>{{$kompetensi->deskripsi}}</p>
+            <h1 class="display-5 fw-bold lh-1 mb-3"><span style="color: #D37E00">{{ $kompetensi->nama }}</span></h1>
+            <p>{{ $kompetensi->deskripsi }}</p>
             <!--untuk tampilan kompetensi-->
-            
-            <h3 class="text-center mt-5">Galeri {{$kompetensi->nama}}</h3>
+
+            <h3 class="text-center mt-5">Galeri {{ $kompetensi->nama }}</h3>
             <hr class="mx-auto bg-danger border-5 border-top border-dark" style="width: 75rem">
 
             <div class="d-flex gap-3 flex-wrap justify-content-center">
-                <img src="{{asset('assets/img/agrikultura/1.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
-                <img src="{{asset('assets/img/agrikultura/2.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
-                <img src="{{asset('assets/img/agrikultura/3.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
-                <img src="{{asset('assets/img/agrikultura/4.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
-                <img src="{{asset('assets/img/agrikultura/5.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
-                <img src="{{asset('assets/img/agrikultura/6.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
-                <img src="{{asset('assets/img/agrikultura/7.jpeg')}}" class="rounded img-fluid object-fit-scale" style="width: 30rem" alt="">
+                @foreach ($detail as $item)
+                    <img src="{{ asset('storage/' . $item->nama_foto_kompetensi) }}"
+                        class="rounded img-fluid object-fit-cover" style="width: 30rem" alt="">
+                @endforeach
+
+                {{-- <img src="{{ asset('assets/img/agrikultura/2.jpeg') }}" class="rounded img-fluid object-fit-scale"
+                    style="width: 30rem" alt="">
+                <img src="{{ asset('assets/img/agrikultura/3.jpeg') }}" class="rounded img-fluid object-fit-scale"
+                    style="width: 30rem" alt="">
+                <img src="{{ asset('assets/img/agrikultura/4.jpeg') }}" class="rounded img-fluid object-fit-scale"
+                    style="width: 30rem" alt="">
+                <img src="{{ asset('assets/img/agrikultura/5.jpeg') }}" class="rounded img-fluid object-fit-scale"
+                    style="width: 30rem" alt="">
+                <img src="{{ asset('assets/img/agrikultura/6.jpeg') }}" class="rounded img-fluid object-fit-scale"
+                    style="width: 30rem" alt="">
+                <img src="{{ asset('assets/img/agrikultura/7.jpeg') }}" class="rounded img-fluid object-fit-scale"
+                    style="width: 30rem" alt=""> --}}
             </div>
         </div>
 

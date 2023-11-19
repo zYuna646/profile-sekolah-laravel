@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DetailKompetensi;
 use App\Models\Kompetensi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -30,12 +31,30 @@ class KompetensiController extends Controller
      */
     public function store(Request $request)
     {
-        $data = Kompetensi::create($request->all());
+        $nama = $request->nama;
+        $deskripsi = $request->deskripsi;
+        // $data = Kompetensi::create($request->all());
+        $data = new Kompetensi;
+        $data->nama = $nama;
+        $data->deskripsi = $deskripsi;
+        $data->save();
+
+        $id_kompetensi = $data->id;
+
         if ($request->hasFile('foto_kompetensi')) {
-            $foto = Storage::disk('public')->put('images/foto_kompetensi', $request->file('foto_kompetensi'));
+            foreach ($request->file('foto_kompetensi') as $foto) {
+                $fotoName = time() . '_' . $foto->getClientOriginalName();
+                $path = $foto->storeAs('images/foto_kompetensi', $fotoName);
+                // $foto = Storage::disk('public')->put('images/foto_kompetensi', $request->file('foto_kompetensi'));
+                DetailKompetensi::create([
+                    'id_foto' => $id_kompetensi,
+                    'nama_foto_kompetensi' => $path
+                ]);
+            }
+
             // $foto = $request->file('foto_kompetensi')->store('foto_kompetensi', 'public');
-            $data->foto_kompetensi = $foto;
-            $data->save();
+            // $data->foto_kompetensi = $foto;
+            // $data->save();
         }
         return redirect()->route('dashboard.kompetensi');
     }
@@ -55,7 +74,8 @@ class KompetensiController extends Controller
     public function edit(string $id)
     {
         $data = Kompetensi::find($id);
-        return view('kompetensi.edit', compact('data'));
+        $detail = DetailKompetensi::where('id_foto', $id)->get();
+        return view('kompetensi.edit', compact('data'))->with(['detail' => $detail]);
     }
 
     /**
@@ -63,16 +83,43 @@ class KompetensiController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        $nama = $request->nama;
+        $deskripsi = $request->deskripsi;
+
         $kompetensi = Kompetensi::find($id);
-        $input = $request->all();
-        $input['foto_kompetensi'] = $kompetensi->foto_kompetensi;
+        $kompetensi->nama = $nama;
+        $kompetensi->deskripsi = $deskripsi;
+        $kompetensi->save();
+
         if ($request->hasFile('foto_kompetensi')) {
-            Storage::disk('public')->delete($kompetensi->foto_kompetensi);
-            
-            $fotoBaru = Storage::disk('public')->put('images/foto_kompetensi', $request->file('foto_kompetensi'));
-            $input['foto_kompetensi'] = $fotoBaru;
+            foreach ($request->file('foto_kompetensi') as $foto) {
+                $fotoName = time() . '_' . $foto->getClientOriginalName();
+                $path = $foto->storeAs('images/foto_kompetensi', $fotoName);
+
+                // Check if a DetailKompetensi record with this name exists
+                $detailKompetensi = DetailKompetensi::where([
+                    'id_foto' => $id,
+                    'nama_foto_kompetensi' => $path,
+                ])->first();
+
+                if (!$detailKompetensi) {
+                    DetailKompetensi::create([
+                        'id_foto' => $id,
+                        'nama_foto_kompetensi' => $path
+                    ]);
+                }
+            }
         }
-        $kompetensi->update($input);
+
+        // $input = $request->all();
+        // $input['foto_kompetensi'] = $kompetensi->foto_kompetensi;
+        // if ($request->hasFile('foto_kompetensi')) {
+        //     Storage::disk('public')->delete($kompetensi->foto_kompetensi);
+
+        //     $fotoBaru = Storage::disk('public')->put('images/foto_kompetensi', $request->file('foto_kompetensi'));
+        //     $input['foto_kompetensi'] = $fotoBaru;
+        // }
+        // $kompetensi->update($input);
         return redirect()->route('dashboard.kompetensi');
     }
 
@@ -83,12 +130,25 @@ class KompetensiController extends Controller
     {
         $data = Kompetensi::find($id);
         $name = $data->foto_kompetensi;
-        if($name != null || $name != '') {
+        if ($name != null || $name != '') {
             Storage::disk('public')->delete($name);
         }
 
         $data->delete();
-        
+
         return redirect()->route('dashboard.kompetensi');
+    }
+
+    public function destroyDetail($id)
+    {
+        $data = DetailKompetensi::find($id);
+        $name = $data->nama_foto_kompetensi;
+        if ($name != null || $name != '') {
+            Storage::disk('public')->delete($name);
+        }
+
+        $data->delete();
+
+        return redirect()->route('dashboard.kompetensi.edit');
     }
 }

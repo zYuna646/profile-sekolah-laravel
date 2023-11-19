@@ -75,7 +75,7 @@
                 <div class="col-lg-12 p-4" style="background-color:black">
                     <div>
                         <div class=" ">
-                            <img src="assets/img/SMAN MODEL LOGO.png" alt="#">
+                            <img src="{{ asset ('assets/img/SMAN MODEL LOGO.png')}}" alt="#">
                             <P class="text-light">SMA NEGERI MODEL GORONTALO
                                 <br>Jl. Muchlis Rahim, Desa Panggulo Barat – Botupingge Kab Bone Bolango – Provinsi
                                 Gorontalo 96554 Indonesia
@@ -83,7 +83,7 @@
                         </div>
                         <div class=" ">
                             <P class="text-light">follow Us</P>
-                            <img src="assets/img/facebook-instagram-twitter-icons-png-12 1.png" alt="#">
+                            <img src="{{ asset ('assets/img/facebook-instagram-twitter-icons-png-12 1.png')}}" alt="#">
                         </div>
                     </div>
                 </div>

@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kompetensis', function (Blueprint $table) {
+        Schema::create('detail_gambar_kompetensi', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->text('deskripsi');
+            $table->unsignedBigInteger('id_foto');
+            $table->string('nama_foto_kompetensi');
             $table->timestamps();
+
+            $table->foreign('id_foto')->references('id')->on('kompetensis');
         });
     }
 
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kompetensis');
+        Schema::dropIfExists('detail_gambar_kompetensi');
     }
 };

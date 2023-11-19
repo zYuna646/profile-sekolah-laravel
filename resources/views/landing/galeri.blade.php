@@ -13,70 +13,17 @@
 
     <div class="container mb-5">
         <div class="d-flex flex-wrap gap-2 justify-content-center">
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 1.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
+            @foreach ($galeri as $item)
+                <div class="card" style="width: 300px;">
+                    <img src="{{ asset('storage/' . $item->foto_galeri) }}" alt=""
+                        class="card-img-top w-100 object-fit-cover" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h2>{{ $item->nama_kegiatan }}</h2>
+                        <p>{{ $item->keterangan }}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 2.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 3.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 4.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 5.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 5</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 6.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 6</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 7.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 7</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
-            <div class="card" style="width: 300px; height:450px">
-                <img src="assets/img/kegiatan 8.jpeg" alt="" class="card-img-top w-100 object-fit-cover" style="height: 200px">
-                <div class="card-body text-center">
-                    <h2>Kegiatan 8</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem et cum accusantium ipsa dolorum
-                        corporis iusto porro? Blanditiis est aperiam sint, minima ipsa maiores!</p>
-                </div>
-            </div>
+            @endforeach
+
         </div>
     </div>
 @endsection

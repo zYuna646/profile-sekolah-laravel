@@ -67,7 +67,7 @@ class GaleriController extends Controller
         $input['foto_galeri'] = $Galeri->foto_galeri;
         if ($request->hasFile('foto_galeri')) {
             Storage::disk('public')->delete($Galeri->foto_galeri);
-            
+
             $fotoBaru = Storage::disk('public')->put('images/foto_galeri', $request->file('foto_galeri'));
             $input['foto_galeri'] = $fotoBaru;
         }
@@ -82,13 +82,12 @@ class GaleriController extends Controller
     {
         $data = Galeri::find($id);
         $name = $data->foto_galeri;
-        if($name != null || $name != '') {
+        if ($name != null || $name != '') {
             Storage::disk('public')->delete($name);
         }
 
         $data->delete();
-        
+
         return redirect()->route('dashboard.galeri');
     }
-
 }

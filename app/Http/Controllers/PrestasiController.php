@@ -68,10 +68,11 @@ class PrestasiController extends Controller
         $input['foto_siswa'] = $prestasi->foto_siswa;
         if ($request->hasFile('foto_siswa')) {
             Storage::disk('public')->delete($prestasi->foto_siswa);
-            
+
             $fotoBaru = Storage::disk('public')->put('images/foto_siswa', $request->file('foto_siswa'));
             $input['foto_siswa'] = $fotoBaru;
         }
+        // dd($input);
         $prestasi->update($input);
         return redirect()->route('dashboard.prestasi');
     }
@@ -83,12 +84,12 @@ class PrestasiController extends Controller
     {
         $data = Prestasi::find($id);
         $name = $data->foto_siswa;
-        if($name != null || $name != '') {
+        if ($name != null || $name != '') {
             Storage::disk('public')->delete($name);
         }
 
         $data->delete();
-        
+
         return redirect()->route('dashboard.prestasi');
     }
 }
