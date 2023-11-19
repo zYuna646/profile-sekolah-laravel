@@ -41,7 +41,7 @@
                             <h5>{{ $item->jabatan }}</h5>
                         </div>
                         <img src="{{ asset('storage/' . $item->foto) }}" alt="" height="300"
-                            class="mx-auto card-img-top object-fit-full">
+                            class="mx-auto card-img-top object-fit-fill">
                         <div class="card-body text-center">
                             <h3>{{ $item->nama }}</h3>
                             <h5>{{ $item->nip }}</h5>

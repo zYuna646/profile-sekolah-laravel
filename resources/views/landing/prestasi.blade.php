@@ -16,7 +16,7 @@
             @foreach ($prestasi as $value => $item)
                 <div class="card" style="width: 300px; height:350px">
                     <img src="{{ asset('storage/' . $item->foto_siswa) }}" alt=""
-                        class="card-img-top w-100 object-fit-cover" style="height: 200px">
+                        class="card-img-top w-100 object-fit-fill" style="height: 200px">
                     <div class="card-body text-center">
                         <h2>{{ $item->nama_siswa }}</h2>
                         <p>{{ $item->keterangan }}</p>
