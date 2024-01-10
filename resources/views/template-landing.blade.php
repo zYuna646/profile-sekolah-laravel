@@ -76,9 +76,8 @@
                     <div>
                         <div class=" ">
                             <img src="{{ asset ('assets/img/SMAN MODEL LOGO.png')}}" alt="#">
-                            <P class="text-light">SMA NEGERI MODEL GORONTALO
-                                <br>Jl. Muchlis Rahim, Desa Panggulo Barat – Botupingge Kab Bone Bolango – Provinsi
-                                Gorontalo 96554 Indonesia
+                            <P class="text-light">SMK Negeri 1 Bonepantai
+                              
                             </p>
                         </div>
                         <div class=" ">

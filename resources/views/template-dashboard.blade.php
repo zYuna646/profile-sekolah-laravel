@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin SMK Model Gorontalo</title>
+    <title>Admin SMK Negeri 1 Bonepantai</title>
     <link rel="shortcut icon" type="image/png" href="assetsDashboard/images/logos/SMAN MODEL LOGO.png" />
     {{-- <link rel="stylesheet" href="assetsDashboard/css/styles.min.css" /> --}}
     <link rel="stylesheet" href="{{ asset('assetsDashboard') }}/css/styles.min.css" />
@@ -30,7 +30,7 @@
                             <img src="{{ asset('assets') }}/img/SMAN MODEL LOGO.png" style="width:50px" />
                         </div>
                         <div class="col mr-3 mt-3 ">
-                            <h4 class="fw-bolder">SMKN MODEL</h4>
+                            <h4 class="fw-bolder">Dashboard</h4>
                         </div>
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">

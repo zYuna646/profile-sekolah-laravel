@@ -10,8 +10,8 @@
                 </div>
                 <div class="col-lg-6">
                     <h3 class="fw-bold">Sistem Informasi</h3>
-                    <h1 class="display-5 fw-bold lh-1 mb-3">SMK NEGERI <br> <span style="color: #D37E00">MODEL
-                            GORONTALO</span></h1>
+                    <h1 class="display-5 fw-bold lh-1 mb-3"> SMK Negeri 1 <br> <span
+                            style="color: #D37E00">Bonepantai</span></h1>
                     <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
                         world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
                         responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
@@ -36,7 +36,7 @@
                                 <h1>Jurusan</h1>
                             </div>
                             <div class="row">
-                                <h2>5</h2>
+                                <h2>3</h2>
                             </div>
                         </div>
                     </div>
@@ -93,15 +93,15 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/smamodel.jpeg" class="d-block w-100" alt="..."
+                    <img src="assets/img/1.jpg" class="d-block w-100" alt="..."
                         style="height: 500px; object-fit:cover">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/kegiatan 2.jpeg" class="d-block w-100" alt="..."
+                    <img src="assets/img/2.jpg" class="d-block w-100" alt="..."
                         style="height: 500px; object-fit:cover">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/kegiatan.jpeg" class="d-block w-100" alt="..."
+                    <img src="assets/img/3.jpg" class="d-block w-100" alt="..."
                         style="height: 500px; object-fit:cover">
                 </div>
             </div>
@@ -125,8 +125,8 @@
         <div class="container">
             <div class="row justify-content-center mb-3">
                 <div class="col-lg-10 text-center mt-4 text-light">
-                    <h3>Kenapa Harus Sekolah di <span class="text-warning"> SMKN Model Gorontalo </span> ?</h4>
-                        <p>Alasan kenapa kalian harus bergabung di SMKN Model Gorontalo</p>
+                    <h3>Kenapa Harus Sekolah di <span class="text-warning">SMK Negeri 1 Bonepantai </span> ?</h4>
+                        <p>Alasan kenapa kalian harus bergabung di SMK Negeri 1 Bonepantai</p>
 
                 </div>
             </div>
@@ -192,7 +192,7 @@
 
                 </div>
                 <div class="col-lg-10 text-center mt-4 text-dark">
-                    <h2> VISI MISI <span class="text-success">SMKN Model Gorontalo </span></h4>
+                    <h2> VISI MISI <span class="text-success">SMK Negeri 1 Bonepantai </span></h4>
                 </div>
                 <div class="col-lg-7">
 
@@ -207,9 +207,8 @@
                     <div>
                         <div class=" justify-content-center ">
                             <h3 class="bg-secondary w-50 ps-3 rounded">VISI</h2>
-                                <P>Terwujudnya Smk Yang Unggul Berbudi Pekerti Mulia, Menguasai Iptek, Didasari Iman Dan
-                                    Taqwa, Berbudaya, Kompetitif Secara Global Dan Berawawasan Lingkungan Serta Mampu
-                                    Menciptkana Lapangan kerja Mandiri</P>
+                                <P>Menjadi Pusat Diklat Sertifikasi (Centre of Training and Certification) yang unggul dalam
+                                    mewujudkan lulusan yang Profesional, Adaptabel, Responsif dan IMTAQ.</P>
                         </div>
                     </div>
                 </div>
@@ -223,18 +222,12 @@
                                     <br> Menjalin hubungan kerja sama yang erat dengan dunia usaha dan industri </br>
                                 </P> --}}
                                 <ul>
-                                    <li>Meningkatkan kualitas pembelajaran SMK yang unggul, <br>merata untuk menghasilkan
-                                        lulusan yang terampil,<br> berkarakter, berdaya saing dalam bekerja dan mandiri</li>
-                                    <li>Meningkatkan kompetensi profesionalisme pendidik <br>dan tenaga kependidikan untuk
-                                        menyongsong revolusi industri 4.0</li>
-                                    <li>Mengupayakan mutu layanan pendidikan kejuruan sesuai dengan tuntutan pasar kerja
+                                    <li>Mengembangkan Keunggulan melalui Kepribadian, Ketelatenan dan Kebersihan dengan mengedepankan Kemandirian dan Kreatifitas serta menumbuhkan rasa Kejujuran dan Kepedulian terhadap sesama dan lingkungan.
+                                    <li>Meningkatkan pemahaman warga sekolah pelaksanaan kurikulum Merdeka</li>
+                                    <li>Meningkatkan kompetensi guru sesuai dengan bidang tugasnya
                                     </li>
-                                    <li>Menjalin networking yang baik dengan dunia usaha dan dunia industri</li>
-                                    <li>Membangun sistem manajemen pengelolaan yang koprasional</li>
-                                    <li>Menyelaraskan sarana dan prasarana pendidikan dalam peningkatan kualitas sekolah
-                                    </li>
-                                    <li>Mensinergikan kegiatan ekstrakurikuler yang berwawasan lingkungan</li>
-                                    <li>Mengoptimalkan peran komite sekolah sebagai mitra kerja</li>
+                                    <li>Melengkapi sekolah dengan sarana yang memadai</li>
+                                    
                                 </ul>
                         </div>
                     </div>
@@ -255,13 +248,13 @@
                             hidayah-Nya sehingga kita masih diberi kesempatan untuk bekerja dan berkarya di bidang
                             pendidikan. Karena pendidikan merupakan upaya kita untuk menyiapkan generasi penerus
                             bangsa, yang akan menggantikan estafet kepemimpinan kita di masa mendatang.
-                            Kami mengucapkan selamat datang di website resmi SMK Jakarta Pusat 1 yang dapat
+                            Kami mengucapkan selamat datang di website resmi SMK Negeri 1 Bonepantai yang dapat
                             digunakan sebagai salah satu media komunikasi, dan interaksi antara civitas akademika
                             dan masyarakat pada umumnya.
                             Mari kita bekerja dan berkarya dengan mengharap ridho-Nya dan keikhlasan yang tulus demi
                             menyiapkan generasi bangsa yang berintegritas dan berprestasi.
                             Wassalamu'alaikum Wr. Wb</p>
-                        <p class="text-light">Suleman Mayang M.Pd</p>
+                        <p class="text-light"></p>
                     </div>
                 </div>
             </div>

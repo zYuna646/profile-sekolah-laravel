@@ -14,7 +14,7 @@ class GaleriController extends Controller
     public function index()
     {
         $data = galeri::all();
-        return view('galeri.index', compact('data'));
+        return view('Galeri.index', compact('data'));
     }
 
     /**
@@ -22,7 +22,7 @@ class GaleriController extends Controller
      */
     public function create()
     {
-        return view('galeri.create');
+        return view('Galeri.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class GaleriController extends Controller
     public function show(string $id)
     {
         $galeri = galeri::find($id);
-        return view('galeri.show', compact('galeri'));
+        return view('Galeri.show', compact('galeri'));
     }
 
     /**
@@ -54,7 +54,7 @@ class GaleriController extends Controller
     public function edit(string $id)
     {
         $data = Galeri::find($id);
-        return view('galeri.edit', compact('data'));
+        return view('Galeri.edit', compact('data'));
     }
 
     /**
